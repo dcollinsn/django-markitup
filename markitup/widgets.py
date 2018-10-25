@@ -70,7 +70,7 @@ class MarkItUpWidget(MarkupTextarea):
     media = property(_media)
 
     def render(self, name, value, attrs=None, renderer=None):
-        html = super(MarkItUpWidget, self).render(name, value, attrs, render)
+        html = super(MarkItUpWidget, self).render(name, value, attrs, renderer)
 
         # Passing base_attrs as a kwarg for compatibility with Django < 1.11
         # (where it will be treated as an innocuous attr named base_attrs)
